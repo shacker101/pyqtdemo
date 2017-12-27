@@ -7,8 +7,8 @@ if __name__=='__main__':
     app=QApplication(sys.argv)
 
     w=QWidget()
-    w.resize(250,150)
-    w.move(300,300)
+    w.resize(1000,800)
+    w.move(500,200)
     w.setWindowTitle('simple')
     w.show()
 
