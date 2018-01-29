@@ -10,7 +10,7 @@ class Example(QWidget):
 
     def initUI(self):
         qbtn=QPushButton('Quit',self)   #self是父级组件，父级组件是继承自QWidget的Example类
-        qbtn.clicked.connect(QCoreApplication.instance().quit)
+        qbtn.clicked.connect(QCoreApplication.instance().quit)     #将点击按钮与结束应用连接
         qbtn.resize(qbtn.sizeHint())
         qbtn.move(400,200)
 

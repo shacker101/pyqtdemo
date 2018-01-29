@@ -10,7 +10,7 @@ class Example(QWidget):
 
     def initUI(self):
         self.resize(1000, 800)
-        self.center()
+        self.center()     #调用了下面的center方法
 
         self.setWindowTitle('Center')
         self.show()
