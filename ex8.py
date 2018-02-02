@@ -16,9 +16,9 @@ class Example(QMainWindow):
 
         self.statusBar()
 
-        menubar=self.menuBar()
-        fileMenu=menubar.addMenu('&File')
-        fileMenu.addAction(exitAct)
+        menubar=self.menuBar()        #menuBar()创建菜单栏
+        fileMenu=menubar.addMenu('&File')        #添加叫做File的菜单
+        fileMenu.addAction(exitAct)        #添加上面创建的退出动作
 
         self.setGeometry(300, 300, 300, 200)
         self.setWindowTitle('Simple menu')
