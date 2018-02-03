@@ -18,7 +18,7 @@ class Example(QMainWindow):
            newAct = cmenu.addAction("New")
            opnAct = cmenu.addAction("Open")
            quitAct = cmenu.addAction("Quit")
-           action = cmenu.exec_(self.mapToGlobal(event.pos()))       #使用exec_()方法显示菜单
+           action = cmenu.exec_(self.mapToGlobal(event.pos()))       #使用exec_()方法显示菜单，不是用addAction
                                                                         #mapToGlobal()方法把当前组件的相对坐标转换为窗口（window）的绝对坐标，就是让右键菜单在鼠标附近
            if action == quitAct:
                qApp.quit()
