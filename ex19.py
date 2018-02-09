@@ -19,7 +19,7 @@ class Example(QWidget):
         self.text = "x: {0},  y: {1}".format(x, y)
 
         self.label = QLabel(self.text, self)
-        grid.addWidget(self.label, 0, 0, Qt.AlignTop)       #Qt.AlignTop代表置顶
+        grid.addWidget(self.label, 0, 0, Qt.AlignTop)       #Qt.AlignTop代表从上到下列出widget
 
         self.setMouseTracking(True)          #打开鼠标跟踪，实测只能跟踪在应用窗口中的移动
 
